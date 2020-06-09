@@ -9,6 +9,7 @@ import time
 try:
    print('Please do not abuse this tool, it is not made to harrass people or cause intended damage to something that you do not have permission to damage.')
    time.sleep(7)
+   #decrease this amount of time as you wish, it was meant so it was seen very clearly#
    print ('Please enter the number of characters you would like your output to be to be. Please only input valid numerals or else the program will fail.')
    inputted_number = input()
    length_of_string = int(inputted_number) 
