@@ -4,7 +4,7 @@ Randcharactersgen is a compact tool for creating randomized strings of numbers, 
 Please do not abuse this tool, it is meant for legitimate use only.
 
 Prerequisites: 
-Python
+Python2 (Python3 causes an error due to some string interperation issues)
 
 
 
