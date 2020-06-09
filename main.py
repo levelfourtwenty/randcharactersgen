@@ -34,7 +34,7 @@ try:
     time.sleep(1)
     print (a)
 except:
-    print ('The script failed, this is most likely because a string or non whole number was input instead of an integer, if so, please try again with a valid input, if not, mention it on the github repo page.')
+    print ('The script failed, this is most likely because a string or non whole number was input instead of an integer or a number was input that was too high, if so, please try again with a valid input, if not, mention it on the github repo page.')
     exit()
  
     
