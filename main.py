@@ -28,3 +28,5 @@ try:
 
 except:
    print ('An exception has occurred! This most commonly happens when an invalid input was recieved, please check your entries and try again, if this is not the case and the error persists please raise the issue on the github page.')
+
+#repo url is https://github.com/levelfourtwenty/randcharactersgen#
