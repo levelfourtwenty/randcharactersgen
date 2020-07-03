@@ -6,22 +6,25 @@ import random
 import string
 import time
 
-
 try:
-   print('Please do not abuse this tool, it is not made to harrass people or cause intended damage to something that you do not have permission to damage.')
-   time.sleep(7)
-   #decrease this amount of time as you wish, it was meant so it was seen very clearly#
+   print ('What kind of string would you like to output? l/L outputs standard latin charaters, n/N outputs standard numerals, p/P outputs punctuation, a/A outputs all of the .')
+   string_type = input()
    print ('Please enter the number of characters you would like your output to be to be. Please only input valid numerals or else the program will fail.')
    inputted_number = input()
    length_of_string = int(inputted_number) 
-   a = "".join(random.choice(string.digits + string.ascii_letters + string.punctuation)for i in range(length_of_string))
-   print('Your string will be output in 4 seconds')
-#feature added to help prevent lag in certain terminals#
-   time.sleep(4)
+   let = "".join(random.choice(string.ascii_letters)for i in range(length_of_string))
+   dig = "".join(random.choice(string.digits)for i in range(length_of_string))
+   pun = "".join(random.choice(string.punctuation)for i in range(length_of_string))
+   full = "".join(random.choice(string.digits + string.ascii_letters + string.punctuation)for i in range(length_of_string))
 
-   print(a)
-   
+   if string_type.lower() == 'a':
+      print (full)
+   if string_type.lower() == 'l':
+      print (let)
+   if string_type.lower() == 'p':
+      print (pun)   
+   if string_type.lower() == 'n':
+      print (dig)
+
 except:
-   print ('The script failed, this is most likely because a string or non whole number was input instead of an integer or a number was input that was too high, if so, please try again with a valid input, if not, mention it on the github repo page.')
-   exit()
- 
+   print ('An exception has occurred! This most commonly happens when an invalid input was recieved, please check your entries and try again, if this is not the case and the error persists please raise the issue on the github page.')
